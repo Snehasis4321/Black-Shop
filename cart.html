@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<style>
+
+    #customers {
+        margin: auto;
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 90vw;
+    }
+
+    #customers td,
+    #customers th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    #customers tr:nth-child(odd) {
+        background-color: white;
+    }
+
+    #customers tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    #customers tr:hover {
+        background-color: #ddd;
+    }
+
+    #customers th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: yellow;
+        color: black;
+    }
+</style>
+
+<body>
+    <!-- header  -->
+    <nav>
+        <div class="tophead">
+            <h1 id="logo">Black Shop</h1>
+            <a href="cart.html"><span id="cart-icon" class="material-symbols-outlined">
+                    shopping_cart
+                </span></a>
+        </div>
+    </nav>
+    <!-- contents -->
+    <section>
+        <h2 class="title">Shopping Cart</h1>
+
+    <!-- footer  -->
+    <table id="customers">
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Delete</th>
+        </tr>
+        <tr>
+            <td>Dog's Laptop</td>
+            <td>Rs : 10,000</td>
+            <td>Delete</td>
+        </tr>
+        <tr>
+            <td>Dog's Laptop</td>
+            <td>Rs : 10,000</td>
+            <td>Delete</td>
+        </tr>
+    </table>    </section>
+
+
+    <hr class="end-of">
+
+    <!-- total cost  -->
+
+    <section>
+        <h2 class="title">Total Cost : <span>Rs : 20,000</span></h2>
+    </section>
+
+    <section class="end" style="float: flex-end;" >
+        <h3>Black Shop @2022</h3>
+        <h4>Purchase at your own risk.</h4>
+    </section>
+ 
+
+</body>
+
+</html>
