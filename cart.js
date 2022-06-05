@@ -5,6 +5,7 @@ settotal = () => {
         count = 0
     }
     document.querySelector(".total").innerText = count
+    displayCart()
 }
 
 
@@ -26,8 +27,6 @@ displayCart = () => {
 </tr>`;
 
 
-        // ans.innerText=totalCost
-
     })
     let totalCost = 0;
     for (let t of items) {
@@ -41,32 +40,27 @@ displayCart = () => {
 
 
 
-deleteItem = () => {
+let deleteItem = () => {
     let items = localStorage.getItem('cart')
     items = JSON.parse(items)
     let allitems = document.querySelectorAll('.delete-item')
-
+let t;
     for (let i = 0; i < allitems.length; i++) {
         allitems[i].addEventListener('click', () => {
             console.log('deleete')
-          let arr=items.filter(function(e){
-                return( e.name!=allitems[i].name)
-            })
-            console.log(arr)
-           
+            items.splice(i, 1);
+
+            localStorage.setItem('cart',JSON.stringify(items))
+            localStorage.setItem('count',JSON.stringify(items.length))
+         
         }
         )
-
     }
-    localStorage.setItem('cart',JSON.stringify(arr))
-    displayCart()
-
+    
 }
 
 
-document.addEventListener('DOMContentLoaded', async () => {
+document.addEventListener('DOMContentLoaded',  () => {
     settotal()
-    displayCart()
     deleteItem()
-
 })
