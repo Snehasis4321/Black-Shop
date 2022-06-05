@@ -57,12 +57,13 @@ margin: auto;
     border: 4px solid #FFD369;
 }
 .item img{
+    
     height: 200px;
     width: 200px;
     border-radius: 30px;
 }
 
-button {
+.add-cart {
     margin: 10px 0 ;
     background-color: #FFD369;
     border: none;
@@ -76,7 +77,7 @@ border-radius: 10px;
     cursor: pointer;
   }
 
-  button:hover{
+  .add-cart:hover{
       background-color: #EB596E;
   }
 
@@ -91,6 +92,15 @@ border-radius: 10px;
     background-color: #FFD369;
     text-align: center;
     align-items: center;
+}
+.total{
+
+    background-color: #e4be63;
+    border-radius: 20%;
+    padding: 2px;
+}
+.item-count{
+    display: none;
 }
 @media (min-width:350px){
     .item img{
