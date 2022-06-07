@@ -18,6 +18,7 @@ To deploy this project run
 [Click here to Visit](https://linktodocumentation)
 
 
+
 ## Workings
 
 - Fetching products from api
@@ -25,8 +26,18 @@ To deploy this project run
 - Adding remove from cart
 - Clean UI
 
+## Screenshots
+
+![Screenshot at 2022-06-07 23-28-24](https://user-images.githubusercontent.com/96995340/172450915-b1f36614-cb17-4081-968b-f433308b04d2.png)
+
+
+![Screenshot at 2022-06-07 23-29-46](https://user-images.githubusercontent.com/96995340/172451128-01bf033d-5d5a-49c5-97f9-1ca24206bba8.png)
+
+
+
+
 
 ## 🚀 About Me
-[Snehasis Ghosh](github.com/snehasis4321)
+[Snehasis Ghosh](https://github.com/Snehasis4321/)
 
 
