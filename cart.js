@@ -12,7 +12,7 @@ settotal = () => {
 
 
 displayCart = () => {
-    let lol = document.querySelector('#customers')
+    let lol = document.querySelector('#contents')
     let ans = document.querySelector('#ans')
     let items = localStorage.getItem('cart')
     items = JSON.parse(items)
@@ -44,23 +44,25 @@ let deleteItem = () => {
     let items = localStorage.getItem('cart')
     items = JSON.parse(items)
     let allitems = document.querySelectorAll('.delete-item')
-let t;
+
     for (let i = 0; i < allitems.length; i++) {
         allitems[i].addEventListener('click', () => {
             console.log('deleete')
             items.splice(i, 1);
 
-            localStorage.setItem('cart',JSON.stringify(items))
-            localStorage.setItem('count',JSON.stringify(items.length))
-         
+            localStorage.setItem('cart', JSON.stringify(items))
+            localStorage.setItem('count', JSON.stringify(items.length))
+            location.reload()
         }
         )
+
+
     }
-    
+
 }
 
 
-document.addEventListener('DOMContentLoaded',  () => {
+document.addEventListener('DOMContentLoaded', () => {
     settotal()
     deleteItem()
 })
