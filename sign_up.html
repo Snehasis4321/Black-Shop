@@ -18,7 +18,7 @@
 
         <!-- body section  -->
 <div class="body_section">
-        <h2 style="color: white;">Sign In</h2>
+        <h2 style="color: white;">Sign Up</h2>
 
       
             <input class="form_input" id="email" type="text" name="email" placeholder="email">
@@ -30,43 +30,37 @@
 
         <br>
         <h2 style="color: #EB596E;" id="comment"></h2>
-       <h3 ><a style="color: wheat;" href="sign_up.html">New User Sign Up</a></h3>
+       <h3 ><a style="color: wheat;" href="sign_up.html">Existing User Sign In</a></h3>
     </div>
 <script>
-    let defauldata=[{
-        email:'snehasisghosh2017@gmail.com',
-        password:123456
-    },
-    {
-        email:'snehendudas100@gmail.com',
-        password:123457
-    },
-    {
-        email:'testuser@gmail.com',
-        password:1234
-    },
-]
+
     validateForm=()=>{
-        localStorage.setItem('login-info',JSON.stringify(defauldata))
+        
     let email=document.querySelector('#email').value
     let password=document.querySelector('#password').value
     console.log(email,password)
 
    let data= localStorage.getItem('login-info')
 data=JSON.parse(data)
-   for(d of data){
-       console.log(d.password)
-     if(d.password==password){
-         console.log("ok")
-         window.location.replace("http://127.0.0.1:5500/homepage.html")
-     }
-     else{
-         document.querySelector('#comment').textContent="Cannot Login"
-         console.log("no")
-     }
-     
+if(email!=='' && password!==''){
+let defauldata=[
+    ...data,
+{
+    email:email,
+    password:password
+}
+]
+
+localStorage.setItem('login-info',JSON.stringify(defauldata))
+// window.location.replace("http://127.0.0.1:5500/homepage.html")
+window.location.replace("https://snehasis4321.github.io/Black-Shop/homepage.html")
+}
+else{
+    document.querySelector('#comment').textContent="Please Fill Everything"
+
 }
 }
+
 </script>
 </body>
 </html>

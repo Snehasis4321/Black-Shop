@@ -102,6 +102,18 @@ border-radius: 10px;
 .item-count{
     display: none;
 }
+
+.body_section{
+padding: 10%;
+    text-align: center;
+}.form_input{
+    margin: 3.5px;
+    padding: 15px;
+    margin: 20;
+    border-radius: 12px;
+    height: 40px;
+    width: 300px;
+}
 @media (min-width:350px){
     .item img{
         height: 250px;
