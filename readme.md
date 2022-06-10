@@ -28,8 +28,7 @@ To deploy this project run
 
 
 
-## 🚀 About Me
-[Snehasis Ghosh](https://github.com/Snehasis4321)
+
 
 ## Screenshots
 
@@ -43,7 +42,4 @@ To deploy this project run
 
 
 ## 🚀 About Me
-[Snehasis Ghosh](https://github.com/Snehasis4321/)
-
-
-
+[Snehasis Ghosh](https://github.com/Snehasis4321)
