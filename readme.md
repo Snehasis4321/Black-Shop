@@ -15,21 +15,21 @@ To deploy this project run
 
 ## Website
 
-[Click here to Visit](https://snehasis4321.github.io/Black-Shop/)
+[Click here to Visit](https://e-commerce-947a4.web.app/)
 
 
 
 ## Workings
 
 - Fetching products from api
-- Adding add to cart feature
-- Adding remove from cart
-- Clean UI
+- Firebase Auth
+- Firebase Hosting
+- Adding and removing from cart
 
 
 
 ## 🚀 About Me
-[Snehasis Ghosh](github.com/snehasis4321)
+[Snehasis Ghosh](https://github.com/Snehasis4321)
 
 ## Screenshots
 

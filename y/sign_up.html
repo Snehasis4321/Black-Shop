@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,32 +8,35 @@
     <title>Black Shop</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    
-        <!-- header  -->
-        <nav>
-            <div class="tophead">
-                <h1 id="logo"><a href="#">Black Shop</a></h1>
-            </div>
-        </nav>
 
-        <!-- body section  -->
-<div class="body_section">
+    <!-- header  -->
+    <nav>
+        <div class="tophead">
+            <h1 id="logo"><a href="#">Black Shop</a></h1>
+        </div>
+    </nav>
+
+    <!-- body section  -->
+    <div class="body_section">
         <h2 style="color: white;">Sign Up</h2>
+        <input class="form_input" id="user_name" type="text" name="email" placeholder="name">
+        <br>
+        <input class="form_input" id="email" type="email" name="email" placeholder="email">
+        <br>
+        <input class="form_input" id="password" type="password" name="password" placeholder="password">
+        <br>
+        <button class="add-cart" id="register" type="submit">Submit</button>
 
-      
-            <input class="form_input" id="email" type="text" name="email" placeholder="email">
-            <br>
-            <input class="form_input" id="password" type="text" name="password" placeholder="password">
-            <br>
-            <button  class="add-cart" onclick="validateForm()" type="submit">Submit</button>
-        
 
         <br>
         <h2 style="color: #EB596E;" id="comment"></h2>
-       <h3 ><a style="color: wheat;" href="sign_up.html">Existing User Sign In</a></h3>
+        <h3><a style="color: wheat;" href='index.html'>Existing User Sign In</a></h3>
     </div>
-<script>
+
+    <script type="module" src="firebase/signup.js"></script>
+    <!-- <script>
 
     validateForm=()=>{
         
@@ -61,6 +65,7 @@ else{
 }
 }
 
-</script>
+</script> -->
 </body>
+
 </html>

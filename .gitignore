@@ -1,0 +1,6 @@
+firebase/firebase.js
+.firebaserc
+firebase.json
+.firebase/
+.vscode/
+node_modules/

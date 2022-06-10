@@ -21,18 +21,20 @@
         <h2 style="color: white;">Sign In</h2>
 
       
-            <input class="form_input" id="email" type="text" name="email" placeholder="email">
+            <input class="form_input" id="email" type="email" name="email" placeholder="email">
             <br>
-            <input class="form_input" id="password" type="text" name="password" placeholder="password">
+            <input class="form_input" id="password" type="password" name="password" placeholder="password">
             <br>
-            <button  class="add-cart" onclick="validateForm()" type="submit">Submit</button>
+            <button  class="add-cart" id="login" type="submit">Submit</button>
         
 
         <br>
         <h2 style="color: #EB596E;" id="comment"></h2>
        <h3 ><a style="color: wheat;" href="sign_up.html">New User Sign Up</a></h3>
     </div>
-<script>
+
+    <script type="module" src="firebase/signin.js"></script>
+<!-- <script>
     let defauldata=[{
         email:'snehasisghosh2017@gmail.com',
         password:123456
@@ -67,6 +69,6 @@ data=JSON.parse(data)
      
 }
 }
-</script>
+</script> -->
 </body>
 </html>

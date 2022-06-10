@@ -1,5 +1,7 @@
-//fetch laptop api
 
+
+
+//fetch laptop api
 const fetchEcommerceApi = async (link) => {
     try {
         const res = await fetch(link)
@@ -45,52 +47,57 @@ const buildProducts = async (name, link) => {
 
 
 
-let items=[]
-let addCart = () => {
-    let carts = document.querySelectorAll('.add-cart')
-    console.log(carts)
+// let items=[]
+// let addCart = () => {
+//     let carts = document.querySelectorAll('.add-cart')
+//     console.log(carts)
 
 
- for (let i = 0; i < carts.length; i++) {
-        carts[i].addEventListener('click', () => {
+//  for (let i = 0; i < carts.length; i++) {
+//         carts[i].addEventListener('click', () => {
         
-            let pdName = document.querySelectorAll('.product-name')
-            let pdPrice = document.querySelectorAll('.price')
+//             let pdName = document.querySelectorAll('.product-name')
+//             let pdPrice = document.querySelectorAll('.price')
            
                
-            let product = {
-                name: pdName[i].innerText,
-                price: pdPrice[i].innerText,
+//             let product = {
+//                 name: pdName[i].innerText,
+//                 price: pdPrice[i].innerText,
                 
-            }
-            items.push(product)
-            carts[i].innerText="Already Added"
-            carts[i].disabled = true;
-            
-            console.log(items)
-         
-            localStorage.setItem('cart',JSON.stringify(items))
-            localStorage.setItem('count',items.length)
-            settotal()
-        }
-        )
-    }
-}
+//             }
+//             items.push(product)
 
-settotal=()=>{
-   let count= localStorage.getItem('count')
-   console.log(count)
-   if(count==null){
-       count=0
-   }
-   document.querySelector(".total").innerText=count
-}
+
+//             carts[i].innerText="Already Added"
+//             carts[i].disabled = true;
+            
+//             console.log(items)
+         
+//             localStorage.setItem('cart',JSON.stringify(items))
+//             localStorage.setItem('count',items.length)
+//             settotal()
+//         }
+//         )
+//     }
+// }
+
+// settotal=()=>{
+//    let count= localStorage.getItem('count')
+//    console.log(count)
+//    if(count==null){
+//        count=0
+//    }
+//    document.querySelector(".total").innerText=count
+// }
 
 
 document.addEventListener('DOMContentLoaded', async () => {
     await buildProducts('laptop', 'https://noobgamer75.github.io/ecommerceApi/laptops.json')
     await buildProducts('mobile', 'https://noobgamer75.github.io/ecommerceApi/mobiles.json')
-    addCart()
-    settotal()
+    // addCart()
+    // settotal()
+
 
 })
+
+
